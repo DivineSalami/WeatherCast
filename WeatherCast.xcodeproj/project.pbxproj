@@ -11,6 +11,9 @@
 		A04799652637306800E960D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04799642637306800E960D7 /* ContentView.swift */; };
 		A04799672637306900E960D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04799662637306900E960D7 /* Assets.xcassets */; };
 		A047996A2637306900E960D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04799692637306900E960D7 /* Preview Assets.xcassets */; };
+		A0FBED50263884830062C2E1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBED4F263884830062C2E1 /* API.swift */; };
+		A0FBED53263885620062C2E1 /* APIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBED52263885620062C2E1 /* APIExtension.swift */; };
+		A0FBED5626388C920062C2E1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBED5526388C920062C2E1 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		A04799662637306900E960D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04799692637306900E960D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A047996B2637306900E960D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FBED4F263884830062C2E1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A0FBED52263885620062C2E1 /* APIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExtension.swift; sourceTree = "<group>"; };
+		A0FBED5526388C920062C2E1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,11 @@
 		A04799612637306800E960D7 /* WeatherCast */ = {
 			isa = PBXGroup;
 			children = (
+				A0479976263732F100E960D7 /* ViewModels */,
+				A0479975263732E100E960D7 /* LottieAnimations */,
+				A0479974263732D200E960D7 /* Views */,
+				A0479973263732C200E960D7 /* Models */,
+				A0479972263732B700E960D7 /* Networking */,
 				A04799622637306800E960D7 /* WeatherCastApp.swift */,
 				A04799642637306800E960D7 /* ContentView.swift */,
 				A04799662637306900E960D7 /* Assets.xcassets */,
@@ -67,6 +78,44 @@
 				A04799692637306900E960D7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0479972263732B700E960D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A0FBED4F263884830062C2E1 /* API.swift */,
+				A0FBED52263885620062C2E1 /* APIExtension.swift */,
+				A0FBED5526388C920062C2E1 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A0479973263732C200E960D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0479974263732D200E960D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0479975263732E100E960D7 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		A0479976263732F100E960D7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FBED53263885620062C2E1 /* APIExtension.swift in Sources */,
 				A04799652637306800E960D7 /* ContentView.swift in Sources */,
+				A0FBED5626388C920062C2E1 /* NetworkManager.swift in Sources */,
+				A0FBED50263884830062C2E1 /* API.swift in Sources */,
 				A04799632637306800E960D7 /* WeatherCastApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
